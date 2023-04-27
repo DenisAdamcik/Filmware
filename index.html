@@ -93,7 +93,19 @@
   <p>&copy;2023 Denis Adamcik</p>
   <script src="js/bootstrap.bundle.min.js">
   </script>
+<script>
+    var myCarousel = document.getElementById('carouselid');
+    let number = Math.floor(Math.random()*256);
+        
+        let color =`rgb($(number), ($(number), ($(number))`;
+        console.log(number)
 
+myCarousel.addEventListener('slide.bs.carousel', function() {
+  console.log('změna obraz')
+  document.querySelector('body').style.backgroundColor = color
+  
+})
+</script>
   
 </body>
 
